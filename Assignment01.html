@@ -1,7 +1,19 @@
+<HTML>
+<head>
 <title> Guess the Person!</title>
-
-<body>
 <style>
+body {
+font-size: 20px;
+color: black;
+text-align: center;
+font-size: 25px;
+
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+gap: 10px;
+}
+
 .Firstsection { 
 grid-row-start: 1;
 grid-row-end: 2;
@@ -20,7 +32,7 @@ grid-column-end: 2;
 grid-row-start: 2;
 grid-row-end: 3;
 grid-column-start: 2;
-grid-column-end: 2;
+grid-column-end: 3;
 }
 
 .Thirdsection {
@@ -44,47 +56,58 @@ grid-column-start: 2;
 grid-column-end: 3;
 }
 
-.fithsection {
+.Fithsection {
 grid-row-start: 5;
 grid-row-end: 6;
 grid-column-start: 1;
 grid-column-end: 2;
 }
 
-.sixthsection {
-grid-row-start: 1;
-grid-row-end: 3;
-grid-column-start: 6;
-grid-column-end: 7;
+.Sixthsection {
+grid-row-start: 6;
+grid-row-end: 5;
+grid-column-start: 2;
+grid-column-end: 3;
+}
 
-</body>
-</style>  
-<div class = "firstsection">
+</style>
+</head>
+
+<body>  
+<div class = "Firstsection">
   <h1 onclick = "this.innerHTML = 'This person is a famous singer.' ">click on me!</h1>
+</div>
 
-<div class = "Boxone">
+  <div class = "Boxone">
 <img src= "questionmark.png" onclick = "this.src = 'beyonce.png.PNG';">
+  </div>
 
-<div class = "Boxtwo">
+  <div class = "Boxtwo">
 <img src = "questionmark.png" onclick = "this.src = 'beyonce2.png';">
-  
-<div class = "Thirdsection">
+  </div> 
+
+  <div class = "Thirdsection">
 <h1 onclick = "this.innerHTML = 'There is a 12 year age gap between the mystery singer and there spouse.' ">click on me</h1>
+  </div>
 
-<div class = "Boxthree">
+  <div class = "Boxthree">
 <img src = "questionmark.png" onclick = "this.src = 'beyonce3.png';">
+  </div>
 
-<div class = "Boxfour">
+  <div class = "Boxfour">
 <img src = "questionmark.png" onclick = "this.src = 'beyonce4.png';">
+  </div>
 
-<div class = "Fithsection">
+  <div class = "Fithsection">
 <h1 onclick = "this.innerHTML = 'This singer has been in at least 29 movies.' ">click on me</h1>
+  </div>
 
-<div class = "sixthsection">
+  <div class = "Sixthsection">
 <h1 onclick = "this.innerHTML = '2.2 million people attended her latest tour in 2023.' ">click on me</h1>  
-
+  </div>
   
-  
+ </body>
+ </HTML>
 
   
   
